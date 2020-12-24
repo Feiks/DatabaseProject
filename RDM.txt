@@ -1,0 +1,24 @@
+            Relational Data Model  
+                                        
+airplane_information(pk_plane_no, model_no,capacity)
+ 
+hungar(pk_hungar_no,   location )
+
+stored_airplane(fk_planee_no , fk_hungar_no,date_in,date_out)
+ 
+tested_plane(fk_plaine_no, fk_test_id,fk_technician_ssn,date,score)
+ 
+test(pk_test_id, test_name)
+ 
+employee_union(pk_SSN,name, phone, membership_no)
+ 
+technician(fk_SSN,expertise)
+ 
+traffic_controller(fk_traffic_ssn)
+ 
+airport_employee(fk_airport_SSN)
+
+examed_controller(fk_SSN_controller,fk_exam_id,date)
+ 
+medical_exam(pk_exam_id, description)
+

@@ -1,0 +1,60 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1:3306
+-- Generation Time: Dec 24, 2018 at 04:16 PM
+-- Server version: 5.6.37
+-- PHP Version: 7.1.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `Airport Information Systems`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `airplane_information`
+--
+
+CREATE TABLE `airplane_information` (
+  `plane_no` int(20) NOT NULL,
+  `model_no` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `airplane_information`
+--
+
+INSERT INTO `airplane_information` (`plane_no`, `model_no`) VALUES
+(1, 'Boing 777'),
+(2, 'AT-834'),
+(3, 'Boom-765'),
+(4, 'Aurora-345'),
+(5, 'Airbus A340-500');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `airplane_information`
+--
+ALTER TABLE `airplane_information`
+  ADD PRIMARY KEY (`plane_no`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

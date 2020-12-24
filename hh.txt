@@ -1,0 +1,8 @@
+ALTER TABLE test
+    ADD CONSTRAINT fk_plane_no
+    FOREIGN KEY (plane_no)
+    REFERENCES airplane_information(plane_no);
+
+
+sql statement :
+find all the airplane that are airworthy;
